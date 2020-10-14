@@ -1,6 +1,6 @@
 <template>
   <div>
-    <navigation/>
+    <app-navigation/>
     <hr>
     Sidebar
     <nuxt/>
@@ -8,11 +8,11 @@
 </template>
 
 <script type="text/javascript">
-import navigation from '~/components/navigation.vue'
+import AppNavigation from '~/components/AppNavigation.vue'
 
 export default {
     components: {
-        navigation
+        AppNavigation
     }
 }
 </script>

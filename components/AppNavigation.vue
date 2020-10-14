@@ -7,7 +7,7 @@
 
 <script>
 export default {
-    name: 'navigation'
+    name: 'app-navigation'
 }
 </script>
 
