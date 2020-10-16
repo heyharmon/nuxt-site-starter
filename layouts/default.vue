@@ -2,22 +2,18 @@
   <div>
     <app-navigation/>
     <nuxt/>
+    <app-footer/>
   </div>
 </template>
 
 <script type="text/javascript">
 import AppNavigation from '~/components/AppNavigation.vue'
+import AppFooter from '~/components/Appfooter.vue'
 
 export default {
     components: {
-        AppNavigation
+        AppNavigation,
+        AppFooter
     }
 }
 </script>
-
-<style>
-html {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  padding: 20px;
-}
-</style>

@@ -1,12 +1,41 @@
 <template lang="html">
-  <div class="">
-      <h1>Home</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A vitae atque minima, quam voluptatem saepe deleniti, at numquam in commodi, quae possimus dicta sit magnam quasi vel repudiandae ea sunt est sapiente maiores. Eius quo quos amet dignissimos quam vero incidunt aut magnam, inventore eos eum provident, velit perferendis tempore.</p>
-  </div>
+    <div class="">
+        <app-hero/>
+
+        <section class="padding-y-xl">
+            <div class="container max-width-adaptive-lg">
+                <div class="grid gap-xl">
+                    <div class="col-4@md text-component">
+                        <h2>Foo</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+
+                    <div class="col-4@md text-component">
+                        <h2>Foo</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+
+                    <div class="col-4@md text-component">
+                        <h2>Foo</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <app-feature/>
+    </div>
 </template>
 
 <script>
+import AppHero from '~/components/AppHero'
+import AppFeature from '~/components/AppFeature'
+
 export default {
+    components: {
+        AppHero,
+        AppFeature
+    }
 }
 </script>
 

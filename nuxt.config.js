@@ -11,8 +11,37 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [
+      { src: 'https://unpkg.com/codyhouse-framework/main/assets/js/util.js', async: true }
+    ],
+    htmlAttrs: {
+      class: 'js'
+    }
   },
+  /*
+  ** Nuxt.js modules
+  */
+  modules: [
+   ['@nuxtjs/style-resources']
+  ],
+  /*
+   ** Style Resources
+   ** Variables, mixins and functions to made accessible globally
+   */
+   styleResources: {
+     scss: [
+         '~/assets/scss/resources/_breakpoints.scss',
+         '~/assets/scss/resources/_mixins.scss'
+     ]
+   },
+  /*
+  ** Global CSS
+  ** CSS loaded on every page
+  */
+  css: [
+    '@/assets/scss/app.scss'
+  ],
   /*
   ** Customize the progress bar color
   */
@@ -36,4 +65,3 @@ module.exports = {
     }
   }
 }
-

@@ -13,6 +13,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "codyhouse-framework": "^2.8.0",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
@@ -20,6 +22,8 @@
     "eslint": "^4.19.1",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.1.1",
-    "eslint-plugin-vue": "^4.0.0"
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.3"
   }
 }
