@@ -23,18 +23,15 @@
             </div>
         </section>
 
-        <app-feature/>
     </div>
 </template>
 
 <script>
 import AppHero from '~/components/AppHero'
-import AppFeature from '~/components/AppFeature'
 
 export default {
     components: {
-        AppHero,
-        AppFeature
+        AppHero
     }
 }
 </script>
