@@ -19,12 +19,14 @@ module.exports = {
       class: 'js'
     }
   },
+
   /*
   ** Nuxt.js modules
   */
   modules: [
    ['@nuxtjs/style-resources']
   ],
+  
   /*
    ** Style Resources
    ** Variables, mixins and functions to made accessible globally
@@ -35,6 +37,7 @@ module.exports = {
          '~/assets/scss/resources/_mixins.scss'
      ]
    },
+
   /*
   ** Global CSS
   ** CSS loaded on every page
@@ -42,10 +45,12 @@ module.exports = {
   css: [
     '@/assets/scss/app.scss'
   ],
+
   /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+
   /*
   ** Build configuration
   */
@@ -54,14 +59,14 @@ module.exports = {
     ** Run ESLint on save
     */
     extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
+      // if (isDev && isClient) {
+      //   config.module.rules.push({
+      //     enforce: 'pre',
+      //     test: /\.(js|vue)$/,
+      //     loader: 'eslint-loader',
+      //     exclude: /(node_modules)/
+      //   })
+      // }
     }
   }
 }
