@@ -1,6 +1,6 @@
 <template lang="html">
     <div class="">
-        <app-hero/>
+        <b-hero-1/>
 
         <section class="padding-y-xl">
             <div class="container max-width-adaptive-lg">
@@ -27,11 +27,11 @@
 </template>
 
 <script>
-import AppHero from '~/components/AppHero'
+import BHero1 from '~/components/block/b-hero-1.vue'
 
 export default {
     components: {
-        AppHero
+        BHero1
     }
 }
 </script>

@@ -85,6 +85,7 @@
 
 <script>
 export default {
+    name: 'g-footer-1'
 }
 </script>
 

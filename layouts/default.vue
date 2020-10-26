@@ -1,19 +1,19 @@
 <template>
   <div>
-    <app-navigation/>
+    <g-navigation-1/>
     <nuxt/>
-    <app-footer/>
+    <g-footer-1/>
   </div>
 </template>
 
 <script type="text/javascript">
-import AppNavigation from '~/components/AppNavigation.vue'
-import AppFooter from '~/components/Appfooter.vue'
+import GNavigation1 from '~/components/global/g-navigation-1.vue'
+import GFooter1 from '~/components/global/g-footer-1.vue'
 
 export default {
     components: {
-        AppNavigation,
-        AppFooter
+        GNavigation1,
+        GFooter1
     }
 }
 </script>

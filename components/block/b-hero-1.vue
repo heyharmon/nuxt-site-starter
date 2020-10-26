@@ -20,6 +20,7 @@
 
 <script>
 export default {
+    name: 'b-hero-1'
 }
 </script>
 

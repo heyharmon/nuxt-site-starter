@@ -32,7 +32,8 @@
 
 <script>
 export default {
-    name: 'app-navigation',
+    name: 'b-navigation-1',
+    
     mounted() {
         // File#: _1_header
         // Usage: codyhouse.co/license
