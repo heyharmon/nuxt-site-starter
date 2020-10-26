@@ -16,9 +16,13 @@
           <div class="header__nav-inner">
             <div class="header__label">Main menu</div>
             <ul class="header__list">
+                <li class="header__item"><nuxt-link to="/about" class="header__link">About</nuxt-link></li>
+                <li class="header__item"><nuxt-link to="/solutions" class="header__link">Solutions</nuxt-link></li>
+                <li class="header__item"><nuxt-link to="/resources" class="header__link">Resources</nuxt-link></li>
+                <li class="header__item"><nuxt-link to="/pricing" class="header__link">Pricing</nuxt-link></li>
                 <li class="header__item"><nuxt-link to="/contact" class="header__link">Contact</nuxt-link></li>
                 <li class="header__item header__item--divider" aria-hidden="true"></li>
-                <li class="header__item"><nuxt-link to="/blog" class="btn btn--primary">Blog</nuxt-link></li>
+                <li class="header__item"><nuxt-link to="/download" class="btn btn--primary">Download</nuxt-link></li>
             </ul>
           </div>
         </nav>
