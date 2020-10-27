@@ -1,17 +1,17 @@
 <template lang="html">
-    <section class="hero padding-y-xxl margin-bottom-xl" style="background-image: url('https://codyhouse.co/app/assets/img/hero-img-2.jpg');">
+    <section class="hero padding-y-xxl" :style="'background-image: url(' + image.url + ');'">
       <div class="container max-width-adaptive-lg">
         <div class="max-width-xs">
-          <div class="text-sm opacity-60% margin-bottom-xxs">This is a Label</div>
+          <div class="text-sm opacity-60% margin-bottom-xxs">{{ pre_title }}</div>
 
           <div class="text-component margin-bottom-sm">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam vero aliquam, natus quae architecto hic quod!</p>
+            <h1>{{ title }}</h1>
+            <p>{{ sub_title }}</p>
           </div>
 
           <div class="flex flex-wrap items-center gap-sm">
-            <a href="#0" class="btn btn--primary">Download</a>
-            <a href="#0" class="color-inherit">Learn more</a>
+            <nuxt-link :to="link.url" class="btn btn--primary">{{ link.label || link.title }}</nuxt-link>
+
           </div>
         </div>
       </div>
@@ -20,7 +20,24 @@
 
 <script>
 export default {
-    name: 'b-hero-1'
+    name: 'b-hero-1',
+
+    props: {
+        image: {
+            url: String,
+            alt: String,
+            caption: String
+        },
+        pre_title: String,
+        title:     String,
+        sub_title: String,
+        link: {
+            label:  String,
+            title:  String,
+            url:    String,
+            target: String
+        }
+    }
 }
 </script>
 
