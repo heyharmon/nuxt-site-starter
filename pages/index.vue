@@ -4,17 +4,23 @@
 
         <b-grid-1 v-bind="grid"/>
 
+        <b-feature-1 v-bind="feature"/>
+
+        <b-feature-1 v-bind="feature2"/>
+
     </div>
 </template>
 
 <script>
 import BHero1 from '~/components/block/b-hero-1.vue'
 import BGrid1 from '~/components/block/b-grid-1.vue'
+import BFeature1 from '~/components/block/b-feature-1.vue'
 
 export default {
     components: {
         BHero1,
-        BGrid1
+        BGrid1,
+        BFeature1
     },
 
     data() {
@@ -56,6 +62,42 @@ export default {
                         ]
                     }
                 ]
+            },
+
+            feature: {
+                name: "b-feature-1",
+                image: {
+                    url: "https://images.unsplash.com/photo-1554559380-823246762a89?auto=format&w=800&q=80",
+                    alt: "",
+                    caption: ""
+                },
+                flip_horizontal: false,
+                pre_title: "Pre-title",
+                title: "Lorem ipsum dolor sit.",
+                sub_title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, rem neque doloribus impedit explicabo minus laborum cupiditate atque esse consectetur.",
+                link: {
+                    label: "About Us",
+                    url: "/about",
+                    target: ""
+                }
+            },
+
+            feature2: {
+                name: "b-feature-1",
+                image: {
+                    url: "https://images.unsplash.com/photo-1554559380-823246762a89?auto=format&w=800&q=80",
+                    alt: "",
+                    caption: ""
+                },
+                flip_horizontal: true,
+                pre_title: "Pre-title",
+                title: "Lorem ipsum dolor sit.",
+                sub_title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, rem neque doloribus impedit explicabo minus laborum cupiditate atque esse consectetur.",
+                link: {
+                    label: "About Us",
+                    url: "/about",
+                    target: ""
+                }
             }
         }
     }
