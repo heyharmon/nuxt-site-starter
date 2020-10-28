@@ -1,5 +1,5 @@
 <template lang="html">
-    <footer class="main-footer padding-top-xl padding-bottom-lg">
+    <footer class="main-footer padding-top-xxxl padding-bottom-lg">
       <div class="container max-width-lg">
         <div class="grid gap-lg">
           <div class="col-3@lg order-2@lg flex@lg justify-end@lg">
