@@ -24,9 +24,10 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-   ['@nuxtjs/style-resources']
+   '@nuxtjs/style-resources',
+   '@nuxtjs/axios'
   ],
-  
+
   /*
    ** Style Resources
    ** Variables, mixins and functions to made accessible globally

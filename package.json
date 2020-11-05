@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
     "codyhouse-framework": "^2.8.0",
     "nuxt": "^2.0.0"
   },
