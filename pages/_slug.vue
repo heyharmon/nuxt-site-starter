@@ -21,7 +21,6 @@ export default {
     },
 
     asyncData({ params, $axios }) {
-        // TODO: Use middleware for this?
         if (params.slug === undefined) { params.slug = 'homepage' }
 
         return $axios.$get('http://localhost:4000/pages?slug=' + params.slug)
@@ -32,5 +31,5 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss">
 </style>
