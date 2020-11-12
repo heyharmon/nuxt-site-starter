@@ -1,5 +1,3 @@
-import { Page } from '~/app/models/Page'
-
 const baseURL = 'http://localhost:4000/'
 
 export default ($axios) => ({
@@ -10,7 +8,6 @@ export default ($axios) => ({
         return $axios.$get(baseURL + 'pages?slug=' + slug)
         .then(pages => {
             return pages[0]
-            // return Page(pages[0])
         })
         .catch(error => {
             console.log(error)
