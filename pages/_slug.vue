@@ -20,12 +20,10 @@ export default {
         BFeature1
     },
 
-    asyncData({ params, $axios }) {
-        if (params.slug === undefined) { params.slug = 'homepage' }
-
-        return $axios.$get('http://localhost:4000/pages?slug=' + params.slug)
+    asyncData({ params, $repository }) {
+        return $repository.pages.show(params.slug)
         .then(response => {
-            return { page: response[0] }
+            return { page: response }
         })
     }
 }

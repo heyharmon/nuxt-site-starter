@@ -19,10 +19,10 @@
 
 <script>
 export default {
-    asyncData({ params, $axios }) {
-        return $axios.$get('http://localhost:4000/posts?slug=' + params.slug)
+    asyncData({ params, $repository }) {
+        return $repository.posts.show(params.slug)
         .then(response => {
-            return { post: response[0] }
+            return { post: response }
         })
     }
 }

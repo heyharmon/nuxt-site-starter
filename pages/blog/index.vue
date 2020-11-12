@@ -19,8 +19,8 @@ export default {
         CCard1
     },
 
-    asyncData({ $axios }) {
-        return $axios.$get('http://localhost:4000/posts')
+    asyncData({ $repository }) {
+        return $repository.posts.index()
         .then(response => {
             return { posts: response }
         })

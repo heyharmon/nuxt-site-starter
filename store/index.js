@@ -9,10 +9,10 @@ export const mutations = {
 }
 
 export const actions = {
-    nuxtServerInit({ commit }) {
-        return this.$axios.$get('http://localhost:4000/menu/')
-        .then((response) => {
-            commit('SET_MENU', response)
+    nuxtServerInit(context) {
+        return this.$repository.menus.show()
+        .then((menu) => {
+            context.commit('SET_MENU', menu);
         })
     }
 }
