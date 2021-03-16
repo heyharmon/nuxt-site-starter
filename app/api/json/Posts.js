@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:4000/posts'
+const baseURL = 'https://my-json-server.typicode.com/heyharmon/json-api/posts'
 
 export default ($axios) => ({
 
